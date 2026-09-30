@@ -1,0 +1,23 @@
+
+Actúa como un Arquitecto de Software experto en React 19, TypeScript y Next.js (App Router). 
+Quiero crear una aplicación web moderna siguiendo las mejores prácticas de la industria.La aplicación consiste en: Es un portafolio de mis experiencias y de marca para atraer proyectos nuevos de donde la informacion que vas a tomar https://www.linkedin.com/in/efrain-gonzalez-75854590/.
+
+Por favor, genera la estructura del proyecto y el código inicial basándote estrictamente en esta metodología:
+
+Renderizado Híbrido: Usa React Server Components (RSC) para la obtención de datos y Client Components ("use client") solo donde haya interactividad.
+
+Estilos: Usa Tailwind CSS y componentes accesibles basados en Shadcn UI.
+Gestión de Estado: Usa Zustand para el estado global del cliente y TanStack Query para el estado del servidor (fetching/caché).
+
+Lógica Separada: Implementa Custom Hooks para aislar la lógica de negocio de los componentes visuales.
+Entrégame:La estructura de carpetas recomendada.El código de un Server Component de ejemplo que traiga datos.El código de un Client Component con su respectivo Custom Hook para manejar un formulario o estado interactivo.
+
+Ademas actúa como un director de diseño UI/UX y arquitecto frontend experto en tendencias digitales de 2026. Diseña la estructura, la experiencia de usuario (UX) y el código base (HTML/Tailwind CSS modernos) para una página web de  Portafolio y venta de mepresa como marca.
+Aplica estrictamente estas directrices de diseño para 2026:
+Interfaz Líquida y Adaptativa: La interfaz debe reaccionar de forma sutil al comportamiento del usuario, priorizando un diseño limpio con tipografías fluidas y espacios en blanco generosos.Glassmorphism Dinámico y 
+Neomorfismo Suave: Usa efectos de profundidad con desenfoques de fondo precisos, bordes sutiles iluminados y contrastes elevados automáticos según el modo (oscuro/claro).
+
+Micro-interacciones con propósito: Cada botón o tarjeta debe tener animaciones de respuesta ultra rápidas y naturales (transiciones de 150-200ms) que guíen la vista sin saturar.Accesibilidad Inclusiva (A11y): Contraste impecable (nivel AAA), navegación por teclado fluida, etiquetas claras y soporte nativo para lectores de pantalla.
+
+Arquitectura UX "Zero-Friction": El usuario debe cumplir su objetivo principal en un máximo de dos clics desde la pantalla de inicio (Hero section). Elimina cualquier elemento de relleno o distracciones visuales.
+
