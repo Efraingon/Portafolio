@@ -38,6 +38,48 @@ export const PORTFOLIO_OWNER = {
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: "proj-seniat-analytics",
+    title: "Dashboard de Analítica - Libro de Ventas SENIAT",
+    subtitle: "Análisis Inteligente y Seguro de Ventas & Reportes Comerciales en Cliente",
+    clientName: "Solución Web / Fiscal & Contable",
+    category: "Full-Stack SaaS",
+    description: "Sistema web interactivo y seguro para el análisis inteligente del Libro de Ventas SENIAT y reportes comerciales a partir de archivos Excel (.xlsx / .xls). Diseñado para procesar 100% en el navegador (Client-Side) garantizando la privacidad absoluta de los datos contables y fiscales.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    tags: ["React 19", "Vite 6", "Recharts 2", "D3.js 7", "SheetJS (XLSX)", "Client-Side Privacy", "CSS3 Vanilla"],
+    metrics: [
+      { label: "Privacidad de Datos", value: "100% Client-Side" },
+      { label: "Velocidad de Carga", value: "Instantáneo" },
+    ],
+    featured: true,
+    architectureHighlights: [
+      "Procesamiento en memoria con FileReader API y SheetJS v0.18.5 con 0% envío a servidor externo.",
+      "Visualización avanzada y analítica interactiva con Recharts 2 y D3.js 7.",
+      "Diseño UI Corporativo Ejecutivo Oscuro de alta densidad con React 19 y Vite 6.",
+    ],
+    liveUrl: "https://ventas-dashboard-beta.vercel.app/",
+  },
+  {
+    id: "proj-financierodata",
+    title: "FinancieroData · Dashboard Financiero y Contable Ejecutivo",
+    subtitle: "Análisis Patrimonial, Grupos Contables y Detección de Anomalías",
+    clientName: "Directores Financieros, Contadores & Auditores",
+    category: "Full-Stack SaaS",
+    description: "Herramienta visual, ágil y 100% privada para directores financieros, contadores y auditores. Permite analizar la evolución mensual de grupos contables (Activos, Pasivos, Patrimonio, Ingresos, Costos, Gastos), evaluar distribución patrimonial con Treemaps y detectar anomalías con conclusiones automáticas.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    tags: ["React 18", "Vite 5", "Recharts 2", "SheetJS (XLSX)", "Lucide React", "Treemaps & Pie", "CSS3 Vanilla"],
+    metrics: [
+      { label: "Seguridad & Privacidad", value: "0% Envío Externo" },
+      { label: "Formatos Compatibles", value: ".xlsx, .xls, .csv" },
+    ],
+    featured: true,
+    architectureHighlights: [
+      "Análisis mensual de grupos contables y distribución patrimonial con Treemaps, Donut y Barras.",
+      "Detección de cuentas clave por saldo absoluto y generación de conclusiones automáticas.",
+      "Carga mediante plantilla oficial estandarizada en Excel procesada 100% en el navegador.",
+    ],
+    liveUrl: "https://maxmaxdata-dashboard-kappa.vercel.app/",
+  },
+  {
     id: "proj-vuce",
     title: "Sistema VUCE (Ventanilla Única de Comercio Exterior)",
     subtitle: "Plataforma de Comercio Exterior para el Gobierno de Costa Rica",

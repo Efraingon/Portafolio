@@ -7,7 +7,7 @@ import { ProjectCategory } from "@/types/project";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { CheckCircle2, RefreshCw } from "lucide-react";
+import { CheckCircle2, RefreshCw, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 const CATEGORIES: ProjectCategory[] = [
@@ -93,12 +93,29 @@ export function ProjectsClientFilter() {
                     <div className="absolute top-3 left-3">
                       <Badge variant="emerald">{project.category}</Badge>
                     </div>
+
+                    {project.liveUrl && (
+                      <div className="absolute top-3 right-3">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/90 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/30 backdrop-blur-md transition-all hover:scale-105"
+                          title="Abrir aplicación en vivo"
+                        >
+                          <span>Demo en Vivo</span>
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold font-display text-white group-hover:text-emerald-300 transition-colors">
-                      {project.title}
-                    </h3>
+                    <div className="flex items-start justify-between gap-2">
+                      <h3 className="text-xl font-bold font-display text-white group-hover:text-emerald-300 transition-colors">
+                        {project.title}
+                      </h3>
+                    </div>
                     <p className="text-xs text-emerald-400/80 font-mono mt-0.5">{project.clientName} • {project.subtitle}</p>
                   </div>
 
@@ -119,26 +136,40 @@ export function ProjectsClientFilter() {
                   </div>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-brand-500/20 flex items-center justify-between gap-4">
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="text-[11px] font-mono px-2 py-0.5 rounded bg-petroleum-950 border border-brand-500/20 text-emerald-300/80"
-                      >
-                        {tag}
+                <div className="pt-6 mt-6 border-t border-brand-500/20 space-y-4">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.tags.map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="text-[11px] font-mono px-2 py-0.5 rounded bg-petroleum-950 border border-brand-500/20 text-emerald-300/80"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="text-right shrink-0">
+                      <span className="text-sm font-bold font-mono text-emerald-400">
+                        {project.metrics[0]?.value}
                       </span>
-                    ))}
+                      <span className="block text-[10px] text-slate-400">
+                        {project.metrics[0]?.label}
+                      </span>
+                    </div>
                   </div>
 
-                  <div className="text-right shrink-0">
-                    <span className="text-sm font-bold font-mono text-emerald-400">
-                      {project.metrics[0]?.value}
-                    </span>
-                    <span className="block text-[10px] text-slate-400">
-                      {project.metrics[0]?.label}
-                    </span>
-                  </div>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/60 transition-all group/btn"
+                    >
+                      <span>Probar Aplicación en Vercel</span>
+                      <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                    </a>
+                  )}
                 </div>
               </Card>
             </ScrollReveal>
