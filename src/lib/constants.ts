@@ -38,6 +38,48 @@ export const PORTFOLIO_OWNER = {
 
 export const PROJECTS_DATA: Project[] = [
   {
+    id: "proj-mundofelino",
+    title: "Mundo Felino — Plataforma de Cuidado y Comunidad Felina",
+    subtitle: "Orientación Veterinaria, Biblioteca Educativa y Asistente IA para Caracas",
+    clientName: "Proyecto Web / Comunidad & Bienestar Animal",
+    category: "Full-Stack SaaS",
+    description: "Plataforma web orientada a familias en Caracas para el cuidado integral de gatos. Integra noticias y artículos especializados, consulta guiada con el asistente virtual \"Michi\", biblioteca de conocimiento, galería comunitaria y directorio de centros veterinarios por municipio con contacto directo.",
+    image: "/projects/mundofelino.png",
+    tags: ["Next.js", "React", "TypeScript", "Asistente Virtual IA", "UX/UI Responsive", "Contenido Educativo", "Directorio Geolocalizado"],
+    metrics: [
+      { label: "Asistencia Disponible", value: "24/7" },
+      { label: "Cobertura", value: "Caracas" },
+    ],
+    featured: true,
+    architectureHighlights: [
+      "Asistente conversacional \"Michi\" para orientación sobre alimentación, salud preventiva y comportamiento.",
+      "Biblioteca, noticias y galería interactiva con experiencia de navegación enfocada en lectura y descubrimiento.",
+      "Directorio de veterinarios con búsqueda por municipio, filtros de urgencias y acceso rápido a llamada/WhatsApp.",
+    ],
+    liveUrl: "https://mundofelino-delta.vercel.app",
+  },
+  {
+    id: "proj-monrys-capital",
+    title: "Monrys Capital — Casa de Cambio y Mesa de Dinero",
+    subtitle: "Operación de Divisas, Pagos, Custodia y Tesorería con Estándar Bancario",
+    clientName: "Fintech / Casa de Cambio (Venezuela)",
+    category: "Enterprise Web",
+    description: "Sistema operativo para casa de cambio en Venezuela con enfoque en trazabilidad, cumplimiento y control de caja. Centraliza compra/venta de divisas (USD/Bs), pagos y transferencias, custodia multimoneda, conciliación bancaria diaria y emisión de comprobantes auditables.",
+    image: "/projects/monrys-capital.png",
+    tags: ["React", "Next.js", "TypeScript", "Tesorería & Caja", "KYC / AML", "Conciliación Bancaria", "Comprobantes"],
+    metrics: [
+      { label: "Disponibilidad de Mesa", value: "24/7" },
+      { label: "Conciliación", value: "Diaria" },
+    ],
+    featured: true,
+    architectureHighlights: [
+      "Mesa de dinero con tasas referenciales, operaciones de cambio y flujo completo de recepción/pago.",
+      "Módulos de pagos, custodia de activos y tesorería con arqueo por denominaciones y cierre diario.",
+      "Controles de cumplimiento (KYC/AML), bitácora de auditoría y comprobantes imprimibles por transacción.",
+    ],
+    liveUrl: "https://sistema-pago-khaki.vercel.app",
+  },
+  {
     id: "proj-seniat-analytics",
     title: "Dashboard de Analítica - Libro de Ventas SENIAT",
     subtitle: "Análisis Inteligente y Seguro de Ventas & Reportes Comerciales en Cliente",
