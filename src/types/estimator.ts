@@ -1,4 +1,4 @@
-export type ProjectScopeType = "MVP Development" | "Enterprise SaaS" | "Cloud Migration" | "AI Integration Audit";
+export type ProjectScopeType = "MVP Development" | "Enterprise SaaS" | "Optimización .NET" | "Power BI & BI";
 export type ProjectTimeline = "Express (2-4 weeks)" | "Standard (1-2 months)" | "Scale (3+ months)";
 
 export interface ScopeOption {
@@ -14,7 +14,7 @@ export interface FeatureOption {
   title: string;
   description: string;
   priceUSD: number;
-  category: "Frontend" | "Backend/Cloud" | "AI/Automation" | "DevOps";
+  category: "Frontend" | "Backend" | "Data/BI" | "Automatización";
 }
 
 export interface EstimatorState {

@@ -1,8 +1,7 @@
-export type ProjectCategory = 
+export type ProjectCategory =
   | "All"
-  | "Cloud Architecture"
   | "Full-Stack SaaS"
-  | "AI & Automation"
+  | "Data & BI"
   | "Enterprise Web";
 
 export interface ProjectMetric {
