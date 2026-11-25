@@ -44,7 +44,7 @@ export const PROJECTS_DATA: Project[] = [
     clientName: "Proyecto propio / Código público",
     category: "Enterprise Web",
     description: "Solución integral para captura, trazabilidad y facturación de pedidos y cotizaciones, con geolocalización, arquitectura multi-empresa y sincronización en tiempo real.",
-    image: "https://opengraph.githubassets.com/1/Efraingon/SysPedido",
+    image: "/projects/syspedido-api.png",
     tags: ["C#", ".NET 9", "ASP.NET Core", "Swagger", "SQL Server", "SignalR"],
     metrics: [
       { label: "Backend", value: ".NET 9 / Clean Architecture" },
@@ -65,7 +65,7 @@ export const PROJECTS_DATA: Project[] = [
     clientName: "Proyecto propio / Código público",
     category: "Full-Stack SaaS",
     description: "Aplicación web para centralizar el registro, seguimiento y análisis de proyectos y sus actividades, con autenticación, auditoría y panel de indicadores.",
-    image: "https://opengraph.githubassets.com/1/Efraingon/ProyectYZR",
+    image: "/projects/proyectyzr-dashboard.png",
     tags: ["TypeScript", "Next.js", "React", "PostgreSQL", "Supabase", "Playwright"],
     metrics: [
       { label: "Datos", value: "PostgreSQL + RLS" },
