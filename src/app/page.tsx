@@ -1,7 +1,6 @@
 import React from "react";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { ClientsSection } from "@/components/sections/ClientsSection";
 import { ProjectsClientFilter } from "@/components/projects/ProjectsClientFilter";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -11,10 +10,10 @@ import { Award, GraduationCap, CheckCircle } from "lucide-react";
 
 export default async function HomePage() {
   const TECH_STACK = [
-    { category: "Lenguajes & Frameworks", items: ["C#", ".NET Core", "ASP.NET MVC", "ASP.NET Web API", "JavaScript", "TypeScript"] },
-    { category: "Base de Datos & Performance", items: ["Microsoft SQL Server", "T-SQL Stored Procedures", "Triggers", "Query Optimization", "ADO.NET / Entity Framework"] },
-    { category: "Integraciones & Web", items: ["APIs RESTful", "oData", "JSON / XML", "DevExpress / DevExtreme", "Firma Electrónica Digital"] },
-    { category: "Analytics & Cloud", items: ["Power BI", "Power Query", "RDLC Reports", "Azure Cloud Services", "Git / DevOps"] },
+    { category: "Lenguajes & Frameworks", items: ["C#", ".NET Core", "ASP.NET Core", "ASP.NET MVC", "ASP.NET Web API"] },
+    { category: "Base de Datos & Performance", items: ["Microsoft SQL Server", "T-SQL", "Procedimientos almacenados", "Triggers", "Optimización de consultas"] },
+    { category: "APIs & Integraciones", items: ["APIs REST", "Swagger / OpenAPI", "oData", "JSON / XML", "Entity Framework"] },
+    { category: "Analytics & Reporting", items: ["Power BI", "Power Query", "RDLC Reports", "ETL", "DevExpress / DevExtreme"] },
   ];
 
   return (
@@ -25,10 +24,7 @@ export default async function HomePage() {
       {/* Services Section con Scroll Reveal */}
       <ServicesSection />
 
-      {/* Clients Section (Cartera de clientes empresariales) */}
-      <ClientsSection />
-
-      {/* Projects Showcase Section (Real Projects: VUCE, SISTRAN, Banking, Inventory, Power BI) */}
+      {/* Projects Showcase Section (Real Projects: SysPedido, ProyectYZR, VUCE, SISTRAN, Banking, Inventory, Power BI) */}
       <section id="projects" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
