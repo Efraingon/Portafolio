@@ -62,7 +62,7 @@ export function Footer() {
           <a
             href={`mailto:${PORTFOLIO_OWNER.email}`}
             className="p-2.5 rounded-xl bg-petroleum-900 border border-brand-500/20 text-slate-300 hover:text-brand-300 hover:border-brand-400/50 transition-all"
-            aria-label="Enviar Email a efraingon@gmail.com"
+            aria-label="Enviar Email a efraingon@hotmail.com"
           >
             <Mail className="w-4.5 h-4.5" />
           </a>

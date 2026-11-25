@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { usePortfolioStore } from "@/store/usePortfolioStore";
 import { Button } from "@/components/ui/Button";
-import { Sun, Moon, Sparkles, Layers, Cpu, Mail, ShieldCheck } from "lucide-react";
+import { Sun, Moon, Sparkles, Layers, Cpu, Mail } from "lucide-react";
 import Link from "next/link";
 
 export function Navbar() {
@@ -65,20 +65,13 @@ export function Navbar() {
               Efraín González
             </span>
             <span className="text-[11px] uppercase font-mono tracking-widest text-emerald-400 font-semibold mt-1">
-              Enterprise Software Architect
+              Senior .NET / Software Engineer
             </span>
           </div>
         </Link>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-          <a
-            href="#clients"
-            className="hover:text-brand-300 transition-colors flex items-center gap-1.5"
-          >
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            Clientes
-          </a>
           <a
             href="#projects"
             className="hover:text-brand-300 transition-colors flex items-center gap-1.5"
