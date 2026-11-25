@@ -22,4 +22,5 @@ export interface Project {
   featured: boolean;
   architectureHighlights: string[];
   liveUrl?: string;
+  repoUrl?: string;
 }
