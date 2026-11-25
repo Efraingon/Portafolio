@@ -12,7 +12,7 @@ export function ServicesSection() {
       icon: <FileCode className="w-6 h-6 text-brand-400" />,
       title: "Desarrollo Backend & Integraciones .NET / C#",
       description: "Construcción de arquitecturas robustas con C#, ASP.NET Core, ASP.NET MVC y RESTful Web APIs con manejo seguro de transacciones y autenticación JWT/OAuth.",
-      tags: ["C#", ".NET Core", "ASP.NET MVC", "Web API", "Azure"],
+      tags: ["C#", ".NET Core", "ASP.NET Core", "Web API", "Swagger"],
     },
     {
       icon: <Database className="w-6 h-6 text-cyan-400" />,

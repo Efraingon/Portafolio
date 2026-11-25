@@ -96,11 +96,11 @@ export const efrainProfile = {
   role: "${PORTFOLIO_OWNER.title}",
   theme: "Verde Esmeralda & Azul Petróleo",
   coreSkills: [
-    "C#", ".NET Core", "ASP.NET MVC",
-    "SQL Server T-SQL", "REST APIs",
-    "DevExpress", "Power BI", "Azure"
+    "C#", ".NET Core", "ASP.NET Core",
+    "SQL Server T-SQL", "REST APIs / Swagger",
+    "Power BI", "ETL", "DevExpress"
   ],
-  experience: "15+ Años Enterprise",
+  experience: "Más de 20 años",
   keyProjects: [
     "VUCE Costa Rica",
     "SISTRAN Core Seguros (AIG, AXA)",
