@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const targetEmail = "efraingon@gmail.com";
+    const targetEmail = "efraingon@hotmail.com";
     let providerDelivered = false;
 
     // Intento de envío a través de FormSubmit si el servicio está operativo
