@@ -23,7 +23,7 @@ Este repositorio contiene el código del portafolio público: [portafolio-efrain
 
 | Área | Tecnologías |
 | :--- | :--- |
-| Framework | Next.js 15 (App Router), React 19 |
+| Framework | Next.js 16.4.6 (App Router, Turbopack), React 19 |
 | Lenguaje | TypeScript (strict mode) |
 | Estilos | Tailwind CSS, PostCSS, clsx, tailwind-merge |
 | Estado y datos | Zustand, TanStack Query |
