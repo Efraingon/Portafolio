@@ -7,7 +7,7 @@ import { ProjectCategory } from "@/types/project";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { CheckCircle2, RefreshCw, ExternalLink } from "lucide-react";
+import { CheckCircle2, RefreshCw, ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 
 const CATEGORIES: ProjectCategory[] = [
@@ -158,16 +158,35 @@ export function ProjectsClientFilter() {
                     </div>
                   </div>
 
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/60 transition-all group/btn"
-                    >
-                      <span>{project.liveUrl.includes("github.com") ? "Ver repositorio en GitHub" : "Abrir demo en Vercel"}</span>
-                      <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                    </a>
+                  {(project.liveUrl || project.repoUrl) && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/60 transition-all group/btn"
+                        >
+                          <span>
+                            {project.liveUrl.includes("github.com")
+                              ? "Ver repositorio en GitHub"
+                              : "Abrir demo en vivo"}
+                          </span>
+                          <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                        </a>
+                      )}
+                      {project.repoUrl && (
+                        <a
+                          href={project.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-xs font-semibold bg-petroleum-950/60 hover:bg-petroleum-900 text-slate-300 border border-brand-500/25 hover:border-brand-400/50 transition-all group/btn"
+                        >
+                          <Github className="w-3.5 h-3.5" />
+                          <span>Ver código</span>
+                        </a>
+                      )}
+                    </div>
                   )}
                 </div>
               </Card>
