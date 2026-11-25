@@ -38,7 +38,7 @@ export function ContactModal() {
           </div>
           <h3 className="text-xl font-bold text-white">¡Solicitud Procesada Exitosamente!</h3>
           <p className="text-sm text-slate-300 max-w-sm mx-auto leading-relaxed">
-            Tu información ha sido registrada para <strong className="text-emerald-300 font-mono">efraingon@gmail.com</strong>.
+            Tu información ha sido registrada para <strong className="text-emerald-300 font-mono">efraingon@hotmail.com</strong>.
           </p>
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button
@@ -73,7 +73,7 @@ export function ContactModal() {
               href={`mailto:${PORTFOLIO_OWNER.email}`}
               className="font-mono text-emerald-300 hover:underline font-bold"
             >
-              efraingon@gmail.com
+              efraingon@hotmail.com
             </a>
           </div>
 
@@ -178,7 +178,7 @@ export function ContactModal() {
               className="shadow-glow"
             >
               <Send className="w-4 h-4 mr-1" />
-              <span>Enviar Correo a efraingon@gmail.com</span>
+              <span>Enviar Correo a efraingon@hotmail.com</span>
             </Button>
           </div>
         </form>
