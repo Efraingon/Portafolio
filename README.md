@@ -17,6 +17,10 @@ Este repositorio contiene el código del portafolio público: [portafolio-efrain
 
 - [SysPedido](https://github.com/Efraingon/SysPedido/) — API C#/.NET 9 con ASP.NET Core, Swagger, SQL Server, SignalR y arquitectura multi-tenant.
 - [ProyectYZR](https://github.com/Efraingon/ProyectYZR/) — aplicación web para control de proyectos y actividades; [demo pública](https://proyectyrz.vercel.app/).
+- [Monrys Capital / sistemaPago](https://github.com/Efraingon/sistemaPago) — reingeniería de una casa de cambio sobre API .NET 9 y Angular 20; [demo pública](https://sistema-pago-khaki.vercel.app/).
+- [Mundo Felino](https://github.com/Efraingon/MundoFelino) — biblioteca felina, directorio de clínicas veterinarias y asistente educativo; [demo pública](https://mundofelino-delta.vercel.app/).
+- [FinancieroData](https://github.com/Efraingon/maxmaxdata-dashboard) — dashboard contable y financiero con análisis de saldos desde Excel; [demo pública](https://maxmaxdata-dashboard-kappa.vercel.app/).
+- [Libro de Ventas SENIAT](https://github.com/Efraingon/ventas-dashboard) — dashboard de analítica fiscal y comercial con procesamiento local; [demo pública](https://ventas-dashboard-beta.vercel.app/).
 - Sistemas y evoluciones profesionales relacionados con VUCE Costa Rica, SISTRAN, conciliación bancaria, inventario, firma electrónica, ERP y dashboards Power BI.
 
 ## Stack del portafolio
