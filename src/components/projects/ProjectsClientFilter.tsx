@@ -12,9 +12,8 @@ import Image from "next/image";
 
 const CATEGORIES: ProjectCategory[] = [
   "All",
-  "Cloud Architecture",
   "Full-Stack SaaS",
-  "AI & Automation",
+  "Data & BI",
   "Enterprise Web",
 ];
 
@@ -101,9 +100,9 @@ export function ProjectsClientFilter() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/90 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/30 backdrop-blur-md transition-all hover:scale-105"
-                          title="Abrir aplicación en vivo"
+                          title={project.liveUrl.includes("github.com") ? "Ver código en GitHub" : "Abrir aplicación en vivo"}
                         >
-                          <span>Demo en Vivo</span>
+                          <span>{project.liveUrl.includes("github.com") ? "Ver código" : "Demo en vivo"}</span>
                           <ExternalLink className="w-3.5 h-3.5" />
                         </a>
                       </div>
@@ -166,7 +165,7 @@ export function ProjectsClientFilter() {
                       rel="noopener noreferrer"
                       className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/60 transition-all group/btn"
                     >
-                      <span>Probar Aplicación en Vercel</span>
+                      <span>{project.liveUrl.includes("github.com") ? "Ver repositorio en GitHub" : "Abrir demo en Vercel"}</span>
                       <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                     </a>
                   )}
