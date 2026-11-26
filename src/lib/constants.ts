@@ -44,7 +44,7 @@ export const PROJECTS_DATA: Project[] = [
     clientName: "Proyecto propio / Código público",
     category: "Enterprise Web",
     description: "Solución integral para captura, trazabilidad y facturación de pedidos y cotizaciones, con geolocalización, arquitectura multi-empresa y sincronización en tiempo real.",
-    image: "/projects/syspedido-api.png",
+    image: "/projects/syspedido-pedidos.jpg",
     tags: ["C#", ".NET 9", "ASP.NET Core", "Swagger", "SQL Server", "SignalR"],
     metrics: [
       { label: "Backend", value: ".NET 9 / Clean Architecture" },
